@@ -1,0 +1,39 @@
+// main: ../css.less
+
+.about {
+
+    &_content {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        padding: 50px;
+
+        @media (max-width: 320px){
+            padding: 0 0 25px 0;
+        }
+    }
+
+    &_img {
+        flex: 0 0 10%;
+        padding: 0 20px 0 0 ;
+
+        img{
+            object-position: left;
+        }
+
+        @media (max-width: 600px){
+            display: none;
+        }
+    }
+
+    &_text {
+        line-height: 25px;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+}

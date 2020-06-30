@@ -1,0 +1,148 @@
+//main: ../css.less
+
+.footer{
+
+    background: #1c242a;
+
+    &_content{
+        flex: 1 0 auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+
+        padding: 40px 0;
+
+        @media (max-width: 520px){
+            flex-direction: column-reverse;
+        }
+    }
+
+    &_logo {
+        flex: 1 0 auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 520px){
+            flex: 1 0 50%;
+        }
+
+        @media (max-width: 520px){
+            padding: 40px 0 0 0;
+        }
+
+        img{
+            display: block;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        p{
+            display: block;
+            color: #a68c5e;
+            text-align: center;
+            padding: 20px 0 0 0;
+        }
+    }
+
+    &_contact {
+        flex: 1 0 25%;
+
+    }
+
+    &_tel {
+        color: #a68c5e;
+        font-size: 50px;
+        font-family: "BravoRG";
+        text-align: right;
+        position: relative;
+
+        @media (max-width: 800px){
+            font-size: 38px;
+        }
+
+        @media (max-width: 700px){
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @media (max-width: 320px){
+            padding: 20px 0 0 0;
+        }
+
+        sup{
+            font-size: .6em;
+        }
+    }
+
+    &_btn {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        margin:  5px 0 0 0;
+
+        @media (max-width: 600px){
+            justify-content: center;
+        }
+
+        button{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+
+            background: #1c242a;
+            color: #a68c5e;
+
+            border-bottom: 2px dotted #a68c5e;
+
+                &:hover{
+                    border-bottom: none;
+                    padding-bottom: 2px;
+                    transition: none;
+                }
+
+            img{
+                padding: 0 5px 0 0 ;
+            }
+        }
+    }
+
+    &_nav{
+        margin: -16px 10px 0 30px;
+
+        @media (max-width: 700px){
+            display: none;
+        }
+
+        a{
+            display: inline-block;
+            letter-spacing: 1px;
+            color: @white;
+            margin: 10px 15px 0 0;
+            padding: 0 0 3px 0;
+            font-family: "pfdintextcondpro-medium";
+            text-transform: uppercase;
+
+            &:hover {
+                border-bottom: 2px solid #a68c5e;
+                margin-bottom: -5px;
+            }
+
+        }
+    }
+
+
+}
+

@@ -1,0 +1,93 @@
+//main: ../css.less
+
+
+//menu_region
+
+.menu {
+    position: relative;
+}
+
+.menu>li>button {
+    padding: 2px 0 0 10px ;
+    background: #1c242a;
+    color: @white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sub_menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 9999;
+
+    &>li{
+        padding: 5px 10px ;
+        background: #1c242a;
+
+        text-align: center;
+        color: @white;
+        text-transform: uppercase;
+
+        button{
+        background: #1c242a;
+        color: @white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        }
+    }
+}
+
+
+
+//mobile
+
+.menu_mobile {
+    position: relative;
+    padding: 10px;
+
+    @media (min-width: 724px){
+            display: none;
+        }
+}
+
+.menu_mobile>li>button {
+    background: #1c242a;
+    color: @white;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.sub_menu_mobile {
+    width: 100%;
+    display: none;
+    background: #1c242a;
+    position: absolute;
+    top: -450%;
+    left: 0;
+    z-index: 9999;
+
+    &>li{
+        padding: 5px 10px ;
+
+        text-align: center;
+
+        color: @white;
+        text-transform: uppercase;
+
+        button{
+        background: #1c242a;
+        font-size: 25px;
+        color: @white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        }
+    }
+}
+
+
+
+.show{
+    display: block;
+}
